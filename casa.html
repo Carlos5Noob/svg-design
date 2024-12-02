@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Casa con SVG</title>
+</head>
+<body>
+    
+    <svg style="background-color: pink;" class="house" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- polígono para crear el borde de la casa -->
+        <polygon points="100,300 300,300 300,200 200,100 100,200" style="fill:white;stroke:black;stroke-width:5"/>
+        <!-- Líneas para hacer el tejado. Defino los puntos de inicio y fin para hacer las líneas. También defino el tamaño y color de las líneas -->
+        <line x1="195" y1="100" x2="100" y2="200" stroke="red" stroke-linecap="round" stroke-width="15"></line>
+        <line x1="205" y1="100" x2="300" y2="200" stroke="red" stroke-linecap="round" stroke-width="15"></line>
+        <!-- círculo para la ventana superior circular -->
+        <circle cx="200" cy="170" r="20" stroke="black" stroke-width="5" fill="yellow"></circle>
+        <!-- Rectángulo para hacer la puerta y los escalones -->
+        <rect x="124" y="200" rx="0" ry="50" width="40" height="100" style="fill:red;stroke:black;stroke-width:5"/>
+        <circle cx="135" cy="240" r="3" stroke="black" stroke-width="2" fill="white"></circle>
+        <rect x="120" y="295" rx="0" ry="50" width="50" height="5" style="fill:grey;stroke:grey;stroke-width:5"/>
+        <rect x="128" y="290" rx="0" ry="50" width="30" height="5" style="fill:grey;stroke:grey;stroke-width:5"/>
+        <rect x="210" y="230" rx="1" ry="50" width="60" height="40" style="fill:yellow;stroke:black;stroke-width:5"/>
+        <rect x="208" y="270" rx="2" ry="50" width="65" height="2" style="fill:red;stroke:red;stroke-width:5"/>
+
+        <!-- aquí añado las lineas de las ventanas. Son simplemente lineas en horizontal y vertical de color negro -->
+        <line x1="210" y1="250" x2="270" y2="250" stroke="black" stroke-width="2"/>
+        <line x1="240" y1="230" x2="240" y2="270" stroke="black" stroke-width="2"/>
+        <line x1="180" y1="170" x2="220" y2="170" stroke="black" stroke-width="2"/>
+        <line x1="200" y1="150" x2="200" y2="190" stroke="black" stroke-width="2"/>
+    </svg>
+
+</body>
+</html>
