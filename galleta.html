@@ -10,17 +10,17 @@
     <svg style="background-color: pink;" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
 
         <!-- aquí hago la cabeza,  simplemente el primer circulo es la forma de la cabeza de color marrón y otros dos círculos maś pequeños de color blanco para representar los ojos -->
-        <circle cx="100" cy="50" r="40" fill="#cd803d"></circle>
+        <circle cx="100" cy="60" r="40" fill="#cd803d"></circle>
         <circle cx="80" cy="50" r="5" fill="white"></circle>
         <circle cx="120" cy="50" r="5" fill="white"></circle>
+        <!-- estas dos líneas son las piernas, las pongo por delante de la boca para que no se sobreponga. Además, hacen de cuerpo -->
+        <line x1="100" y1="90" x2="70" y2="260" stroke="#cd803d" stroke-linecap="round" stroke-width="35"></line>
+        <line x1="100" y1="90" x2="130" y2="260" stroke="#cd803d" stroke-linecap="round" stroke-width="35"></line>
         <!-- Rectángulo de color negro para la boca del personaje; x e y para la posición y rx e ry para el radio -->
-        <rect x="84" y="70" rx="5" ry="5" width="30" height="10" style="fill:black;stroke:black;stroke-width:5"/>
-        <!-- cuerpo de la galleta; simplemente lo hago con líneas definiendo los puntos de inicio y de fin. Stroke-linecap para darle la forma redondeada -->
-        <line x1="100" y1="105" x2="100" y2="200" stroke="#cd803d" stroke-linecap="round" stroke-width="35"></line>
-        <line x1="100" y1="110" x2="50" y2="150" stroke="#cd803d" stroke-linecap="round" stroke-width="35"></line>
-        <line x1="100" y1="110" x2="150" y2="150" stroke="#cd803d" stroke-linecap="round" stroke-width="35"></line>
-        <line x1="100" y1="200" x2="70" y2="260" stroke="#cd803d" stroke-linecap="round" stroke-width="35"></line>
-        <line x1="100" y1="200" x2="130" y2="260" stroke="#cd803d" stroke-linecap="round" stroke-width="35"></line>
+        <rect x="84" y="70" rx="5" ry="5" width="30" height="10" style="fill:none;stroke:white;stroke-width:5"/>
+        <!-- brazos de la galleta; simplemente lo hago con una línea definiendo los puntos de inicio y de fin. Stroke-linecap para darle la forma redondeada -->
+        <line x1="50" y1="110" x2="150" y2="110" stroke="#cd803d" stroke-linecap="round" stroke-width="35"></line>
+        
         <!-- otros dos circulos para los botones de color rojo -->
         <circle cx="100" cy="150" r="5" fill="red"></circle>
         <circle cx="100" cy="130" r="5" fill="red"></circle>
